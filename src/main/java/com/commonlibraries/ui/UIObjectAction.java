@@ -38,6 +38,7 @@ public class UIObjectAction {
         if(objAction.equalsIgnoreCase("isDisplayed"))
             Assert.assertEquals(expectedMatch, wd.findElement(By.xpath(objXPath)).isDisplayed());
 
+
         return assertResult;
     }
 

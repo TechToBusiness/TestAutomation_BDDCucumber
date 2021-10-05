@@ -69,7 +69,7 @@ public class CommonActions {
     @After
     public void closeBrowser()
     {
-        UIObjectAction.takeBrowserAction("quit");
+//        UIObjectAction.takeBrowserAction("quit");
     }
 
     @Then("^User validates that (button|Link) ([^\"]*) is present on ([^\"]*) page$")

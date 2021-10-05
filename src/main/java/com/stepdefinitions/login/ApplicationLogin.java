@@ -30,7 +30,7 @@ public class ApplicationLogin {
     @Then("User enters values for new user with {string} from {string} of input excel {string} present in {string} folder")
     public void createUsers(String emailID, String sheetName, String ExcelName, String folderName) throws Exception
     {
-        String xlPath = PathVariables.testDataLoc + folderName + "\\" + ExcelName;
+        String xlPath = PathVariables  .testDataLoc + folderName + "\\" + ExcelName;
 
         LinkedHashMap<String, String> userDetails = Utils.getNewUserDetails(xlPath, sheetName);
 
